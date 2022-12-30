@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-CSS引入方式</title>
+    <!-- 关系：样式表 -->
+    <!-- 下面属于外联式，作用范围是多个页面，通常在项目中使用 -->
+    <link rel="stylesheet" href="./my.css">
+    <!-- 下面属于内嵌式，作用范围是当前页面，通常在小案例使用 -->
+    <style>
+        div{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS到底能写在哪里 -->
+    <p>这是p标签</p>
+    <!-- 下面属于行内式，作用范围是当前标签，通常配合js使用 -->
+    <div style="color: green;font-size: 30px;">这是div标签</div>
+    <div>这个div是什么颜色</div>
+</body>
+</html>
